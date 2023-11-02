@@ -1,0 +1,23 @@
+Package: Adhikari.pkg
+Title: Perform multiple calculation for processing and analyzing crab's data. 
+Version: 0.1 
+Authors@R: c(
+  person(given = "Pranup",
+          family = "Adhikari",
+          role = c("cre", "aut"),
+          email = "pranup.adhikari@selu.edu")
+          )
+Description: An R package that processes Crabs data. Most function accept numerical imput and allow users to remove nas, plot graphs, change cloumns in the data, do lm plot and range of other things. 
+License: MIT + file LICENSE 
+Depends: 
+ R(>= 2.10)
+Imports: 
+  tidyverse, broom 
+RoxygenNote: 7.1.1
+Suggests:
+  knitr,
+  rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+
