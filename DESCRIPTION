@@ -12,7 +12,7 @@ License: MIT + file LICENSE
 Depends: 
  R(>= 2.10)
 Imports: 
-  tidyverse, broom 
+  tidyverse, broom
 RoxygenNote: 7.1.1
 Suggests:
   knitr,
