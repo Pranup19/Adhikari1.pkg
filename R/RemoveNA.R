@@ -8,11 +8,14 @@
 #' @export
 
 
-remove_nas <- function(data, column) {
-  clean <- data %>% 
-    na.omit(data) %>% 
-    select(weight)
-  return(clean)
-  
-  
+remove_nas <- function(data, column_name) {
+  if (any(is.na(data[[column_name]]))) {
+    clean <- data %>% 
+      na.omit(data) %>% 
+      select(({{column_name}}))
+    return(clean)
+  } else {
+    print("NAs still found")
+  }
 }
+#remove_nas(surveys, hindfoot_length)

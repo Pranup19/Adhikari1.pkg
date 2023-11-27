@@ -7,8 +7,12 @@
 
 mutate_size <- function(data) {
   result <- data %>% 
-    mutate(estimated_size = carapace_length* carapace_width * body_depth)
+    mutate(estimated_size = carapace_length* carapace_width * body_depth) %>% 
+    select(carapace_length, carapace_width, body_depth, estimated_size)
   
   return(result)
 }
+
+#new_data <- mutate_size(crabs)
+#print(new_data)
 

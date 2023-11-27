@@ -4,7 +4,7 @@
 \alias{remove_nas}
 \title{Removes na in a data}
 \usage{
-remove_nas(data, column)
+remove_nas(data, column_name)
 }
 \arguments{
 \item{data}{selects the data column}

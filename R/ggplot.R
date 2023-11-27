@@ -11,10 +11,11 @@
 
 
 graph <- function(data, column, column_1) {
-  new <- data %>% 
-    if (is.numeric(df$column_1)){
-      ggplot(mapping = aes(x= {{column}}, y = {{column_1}})) + geom_point()
-      return(new)    
+  test <- data %>% 
+    select({{column_1}})
+    if (sum(test) > 0){
+      plot <- ggplot(data, mapping = aes( data, x= {{column}}, y = {{column_1}})) + geom_point()
+      return(plot)    
     }
   else {
     meme()
