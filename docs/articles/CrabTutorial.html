@@ -145,16 +145,16 @@ with. Lets try it with a random column from the data
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">nrow_before</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/length.html" class="external-link">length</a></span><span class="op">(</span><span class="va">surveys</span><span class="op">$</span><span class="va">hindfoot_length</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">nrow_before</span><span class="op">)</span></span></code></pre></div>
-<pre><code><span><span class="co">## [1] 35549</span></span></code></pre>
-<p>Now that we know there is <em>35549</em> rows of data in this column,
+<pre><code><span><span class="co">## [1] 99</span></span></code></pre>
+<p>Now that we know there is <em>99</em> rows of data in this column,
 lets see if that number changes when we remove all the NAs.</p>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">clean_data</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/remove_nas.html">remove_nas</a></span><span class="op">(</span><span class="va">surveys</span>, <span class="st">"hindfoot_length"</span><span class="op">)</span></span>
 <span><span class="va">nrows_clean</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/length.html" class="external-link">length</a></span><span class="op">(</span><span class="va">clean_data</span><span class="op">[[</span><span class="st">"hindfoot_length"</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">nrows_clean</span><span class="op">)</span></span></code></pre></div>
-<pre><code><span><span class="co">## [1] 30676</span></span></code></pre>
-<p>After cleaning the data, we now know that there is <em>30676</em>
-rows of data and we know that the function works!</p>
+<pre><code><span><span class="co">## [1] 30</span></span></code></pre>
+<p>After cleaning the data, we now know that there is <em>30</em> rows
+of data and we know that the function works!</p>
 <div class="section level4">
 <h4 id="fun-function-function-5">Fun Function (Function 5):<a class="anchor" aria-label="anchor" href="#fun-function-function-5"></a>
 </h4>
@@ -208,11 +208,6 @@ simply save the function as a variable and print the variable.</p>
 <span><span class="co">## <span style="color: #BCBCBC;"> 9</span>            24.2           27.8        9.7          <span style="text-decoration: underline;">6</span>526.</span></span>
 <span><span class="co">## <span style="color: #BCBCBC;">10</span>            25.2           29.3       10.3          <span style="text-decoration: underline;">7</span>605.</span></span>
 <span><span class="co">## <span style="color: #949494;"># ℹ 190 more rows</span></span></span></code></pre>
-<p>This should show a tribble that looks something like this:</p>
-<p>carapace_length carapace_width body_depth estimated_size <dbl><dbl><dbl><dbl> 1 16.1 19 7 2141. 2 18.1 20.8 7.4 2786. 3 19 22.4 7.7 3277.
-4 20.1 23.1 8.2 3807. 5 20.3 23 8.2 3829. 6 23 26.5 9.8 5973. 7 23.8
-27.1 9.8 6321. 8 24.5 28.4 10.4 7236. 9 24.2 27.8 9.7 6526. 10 25.2 29.3
-10.3 7605.</dbl></dbl></dbl></dbl></p>
 </div>
 </div>
 <div class="section level2">
