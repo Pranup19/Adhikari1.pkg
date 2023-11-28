@@ -168,9 +168,13 @@ have any NAs.</p>
 <div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/remove_nas.html">remove_nas</a></span><span class="op">(</span><span class="va">crabs</span>, <span class="st">"rear_width"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="CrabTutorial_files/figure-html/unnamed-chunk-6-1.png" width="700"></p>
-<p>HAHA, thats it, thats my fun function.</p>
 </div>
 </div>
+</div>
+<div class="section level2">
+<h2 id="haha">HAHA<a class="anchor" aria-label="anchor" href="#haha"></a>
+</h2>
+<p>That’s it, that’s my fun function.</p>
 <div class="section level3">
 <h3 id="function-2-mutate-columns">Function 2: Mutate Columns<a class="anchor" aria-label="anchor" href="#function-2-mutate-columns"></a>
 </h3>
@@ -295,11 +299,6 @@ the carapace length to increase by 0.90mm.</li>
 </h4>
 <div class="sourceCode" id="cb24"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">crabs</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x<span class="op">=</span> <span class="va">carapace_length</span>, y <span class="op">=</span> <span class="va">carapace_width</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html" class="external-link">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_smooth.html" class="external-link">geom_smooth</a></span><span class="op">(</span>method <span class="op">=</span> <span class="st">"lm"</span>, color <span class="op">=</span> <span class="st">"red"</span>, size <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> </span></code></pre></div>
-<pre><code><span><span class="co">## Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.</span></span>
-<span><span class="co">## <span style="color: #00BBBB;">ℹ</span> Please use `linewidth` instead.</span></span>
-<span><span class="co">## <span style="color: #555555;">This warning is displayed once every 8 hours.</span></span></span>
-<span><span class="co">## <span style="color: #555555;">Call `lifecycle::last_lifecycle_warnings()` to see where this warning was</span></span></span>
-<span><span class="co">## <span style="color: #555555;">generated.</span></span></span></code></pre>
 <pre><code><span><span class="co">## `geom_smooth()` using formula = 'y ~ x'</span></span></code></pre>
 <p><img src="CrabTutorial_files/figure-html/unnamed-chunk-13-1.png" width="700"></p>
 </div>
